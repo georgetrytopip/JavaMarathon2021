@@ -17,8 +17,11 @@ public class Task2 {
         Player player9 = new Player((int)(Math.random() * (100 - 90)) + 90);
         Player player10 = new Player((int)(Math.random() * (100 - 90)) + 90);
 
+        int j = Player.getCountPlayers();
 
-        while (player1.getStamina() >= 0){
+        System.out.println("Количество игроков на поле =" + j);
+
+        while (player1.getStamina() > 0){
             player1.run();
         }
 
@@ -30,7 +33,3 @@ public class Task2 {
 
     }
 }
-
-// подумать как не допустить отрицательное значение стамины
-// подумать как правильно декрементаировать значение количества игроков через метод (сейчас почему то не отрадатывает)
-
